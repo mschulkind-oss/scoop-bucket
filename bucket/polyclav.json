@@ -1,16 +1,16 @@
 {
   "$schema": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Live piano host: a MIDI keyboard through soundfont synthesis to an audio sink",
   "homepage": "https://github.com/mschulkind-oss/polyclav",
   "license": "Apache-2.0",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/mschulkind-oss/polyclav/releases/download/v0.3.1/polyclav-windows-x86_64.zip",
-      "hash": "1427fe4eb4e9e361833c5245bd6329012922fda6cf93d7b98868fd7de3725ce8"
+      "url": "https://github.com/mschulkind-oss/polyclav/releases/download/v0.3.2/polyclav-windows-x86_64.zip",
+      "hash": "96d8c78df9cd682447622e8748416a9eb40e55f2d2f1b16afccbeb2e91610882"
     }
   },
-  "bin": "polyclav.exe",
+  "bin": ["polyclav.exe", "polyclav-components.exe"],
   "checkver": {
     "github": "https://github.com/mschulkind-oss/polyclav"
   },
