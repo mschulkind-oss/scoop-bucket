@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
+  "version": "0.3.1",
+  "description": "Live piano host: a MIDI keyboard through soundfont synthesis to an audio sink",
+  "homepage": "https://github.com/mschulkind-oss/polyclav",
+  "license": "Apache-2.0",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/mschulkind-oss/polyclav/releases/download/v0.3.1/polyclav-windows-x86_64.zip",
+      "hash": "1427fe4eb4e9e361833c5245bd6329012922fda6cf93d7b98868fd7de3725ce8"
+    }
+  },
+  "bin": "polyclav.exe",
+  "checkver": {
+    "github": "https://github.com/mschulkind-oss/polyclav"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/mschulkind-oss/polyclav/releases/download/v$version/polyclav-windows-x86_64.zip"
+      }
+    }
+  },
+  "notes": [
+    "First run downloads the starter soundfonts (~500 MB): polyclav bootstrap",
+    "Then start the daemon: polyclav    (web UI at http://127.0.0.1:8666/)",
+    "Name your keyboard in [midi].allow_devices, or no notes will play. The web UI has a picker.",
+    "Check the install: polyclav doctor"
+  ]
+}
